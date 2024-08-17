@@ -11,6 +11,3 @@ docker, jenkins
 10. create Jenkinsfile in SpringBoot project directory
 11. in Jenkins, create a new Pipeline job
 12. Test (commit & push changes to repo)
-
-
-
