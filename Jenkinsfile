@@ -1,10 +1,5 @@
 pipeline {
-    agent {
-        docker {
-            image 'openjdk:21-jdk-slim'
-            args '-v /var/run/docker.sock:/var/run/docker.sock'
-        }
-    }
+    agent any
     stages {
         stage('Build') {
             steps {
