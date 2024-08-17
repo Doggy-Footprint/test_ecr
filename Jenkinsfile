@@ -14,10 +14,10 @@ pipeline {
                 }
             }
         }
-        stage('Docker Build & Push') {
+        stage('Build') {
             steps {
                 script {
-                    docker.build('test_ecr')
+                    sh './gradlew test'
                 }
             }
         }
