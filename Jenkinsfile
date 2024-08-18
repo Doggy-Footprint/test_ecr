@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'gradle:7.5-jdk11'
+            image 'tomcat:11.0-jre21'
             args '-v /c/Users/khs19/.jenkins/workspace/test_ecr/:/home/gradle/project'
         }
     }
