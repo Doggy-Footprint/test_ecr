@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {
             image 'gradle:7.5-jdk11'
-            args '-v $HOME/.gradle:/home/gradle/.gradle'
+            args '-v /c/Users/khs19/.jenkins/workspace/test_ecr/:/home/gradle/project'
         }
     }
     environment {
