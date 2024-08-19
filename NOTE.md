@@ -35,3 +35,9 @@ Run Docker daemon
 
 ## Push & run Jenkins
 
+### Error
+
+docker: Error response from daemon: Mounts denied: path ...
+
+Docker가 Mount에 사용하는 폴더를 벗어난 문제.
+Docker Desktop > Setting > Resources > files sharing에서 에러 path를 추가해주면 된다.
