@@ -32,6 +32,13 @@ Script Path : Jenkinsfile
 
 Run Docker daemon
 
+### Run docker
+
+```
+gradle clean build
+docker build -t test_ecr .
+docker run -d -p 8081:8080 -it test_ecr
+```
 
 ## Push & run Jenkins
 
