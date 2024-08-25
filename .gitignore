@@ -37,7 +37,7 @@ jenkins.war
 
 # Gradle binary
 gradle-8.8
-.gradle/
+.gradle
 
 # Mac OS
 .DS_Store
