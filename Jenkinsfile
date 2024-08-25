@@ -1,14 +1,5 @@
 pipeline {
-    agent {
-        docker {
-            image 'tomcat:11.0-jre21'
-            args '-v $HOME/.jenkins/workspace/test_ecr/:/home/gradle/project'
-        }
-    }
-    environment {
-        DOCKER_IMAGE_NAME = "test-ecr-docker-image"
-        DOCKER_REGISTRY = "test-ecr-docker-registry"
-    }
+    agent any
     stages {
         stage('Checkout') {
             steps {
@@ -19,8 +10,8 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    sh 'chmod +x ./gradlew'
-                    sh './gradlew clean build'
+                    sh 'gradle clean build'
+                    sh 'gradle test'
                 }
             }
         }
