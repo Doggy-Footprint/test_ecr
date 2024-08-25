@@ -34,3 +34,11 @@ out/
 ### VS Code ###
 .vscode/
 jenkins.war
+
+# Gradle binary
+gradle-8.8
+
+# Mac OS
+.DS_Store
+
+# Manually Added
