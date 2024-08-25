@@ -7,6 +7,6 @@ public class TestSample {
     
     @Test
     void test_sample() {
-        assertThat(3).isEqualTo(3);
+        assertThat(3).isEqualTo(4);
     }
 }
